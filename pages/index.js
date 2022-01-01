@@ -19,7 +19,7 @@ export const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, link
 
 export default function Home() {
   return (
-    <div>
+    <Box>
       <Banner 
       purpose='RENT A HOME'
       title="Rental Homes for"
@@ -30,6 +30,19 @@ export default function Home() {
       linkName='/search?purpose=for-rent'
       imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
       />
-    </div>
+    <Flex flexWrap='wrap'>
+      {/* Fetch the  properties and map over them...*/}
+    </Flex>
+    <Banner 
+      purpose='RENT A HOME'
+      title="Rental Homes for"
+      title2='Everyone'
+      desc1='Explore Apartaments, Villas, Homes'
+      desc2='and more'
+      buttonText='Explore Renting'
+      linkName='/search?purpose=for-rent'
+      imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
+      />
+    </Box>
   )
 }
